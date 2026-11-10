@@ -121,3 +121,9 @@ footer small{opacity:.7}
 
 .vid video.contain{object-fit:contain}
 .card video{pointer-events:none}
+
+.info{list-style:none;margin-top:28px;font:500 1.05rem 'Space Grotesk',sans-serif;display:flex;flex-wrap:wrap;gap:8px 32px}
+
+.vgrid.three{grid-template-columns:repeat(3,1fr)}
+@media(max-width:900px){.vgrid.three{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.vgrid.three{grid-template-columns:1fr}}
