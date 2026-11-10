@@ -194,3 +194,6 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
   .hero .sub{grid-column:1/-1;grid-row:4;max-width:none}
   .hero .cta{grid-column:1/-1;grid-row:5;margin:24px 0 40px}
 }
+
+.btn.ic{display:inline-flex;align-items:center;justify-content:center;gap:10px}
+.btn.ic svg{flex:none}
