@@ -132,3 +132,51 @@ footer small{opacity:.7}
 .drive h3{font-size:1.4rem;margin:10px 0 6px;color:#fff}
 .drive p{max-width:52ch;font-size:.92rem;color:#c4cde0}
 .badge{display:inline-block;font:700 .66rem Montserrat,sans-serif;letter-spacing:.16em;text-transform:uppercase;background:#fff;color:var(--navy);padding:5px 10px}
+
+/* ===== Responsive refinements ===== */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media(min-width:1600px){:root{--max:1360px}}
+@media(max-width:1024px){
+  .hero .wrap{gap:0}
+  .wgrid{gap:14px}
+  .gal.asym{grid-template-columns:1fr 1fr 1fr}
+}
+@media(max-width:800px){
+  section{padding:64px 0}
+  .hero{min-height:0}
+  .hero .wrap{padding-top:36px}
+  .hero h1{padding-bottom:18px}
+  .hero figure{margin-top:-6px}
+  .cta{margin:24px 0 36px}
+  .cta .btn{flex:1 1 150px;text-align:center}
+  .gal.asym{grid-template-columns:1fr 1fr}
+  .gal.asym figure:first-child{grid-column:1/-1}
+  .gal.asym figure:first-child img{aspect-ratio:4/3}
+  .tools{gap:12px;margin-top:48px}
+  .tool{flex:1 1 130px;width:auto}
+  .split{gap:24px}
+  .about aside{padding:28px 24px}
+  .drive{padding:24px}
+  .drive .btn{width:100%;text-align:center}
+  .modal{padding:0}
+  .modal article{min-height:100%}
+  .modal img{max-height:46vh}
+  .modal .txt{padding:24px}
+  .x{top:8px;right:14px;background:#101D35cc;width:44px;height:44px;display:grid;place-items:center;border-radius:50%;font-size:2rem}
+  .links .btn{flex:1 1 140px;text-align:center}
+}
+@media(max-width:480px){
+  .wrap{padding:0 18px}
+  .btn{padding:15px 22px}
+  .eyebrow{letter-spacing:.14em}
+  .sk div{padding:22px 12px 22px 0}
+  .gal figcaption{font-size:.58rem;padding:5px 9px}
+  .info{flex-direction:column;gap:6px}
+}
+@media(max-width:900px){nav li a{min-height:44px;display:flex;align-items:center}}
+@media(hover:none){
+  .btn:hover,.tool:hover{transform:none}
+  .card:hover img,.card:hover video,.gal figure:hover img{transform:none}
+  .sk div:hover{padding-left:0}
+}
+@media(max-height:500px) and (orientation:landscape){.hero{min-height:0}.hero .wrap{padding-top:24px}}
